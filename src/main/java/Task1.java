@@ -11,15 +11,10 @@ public class Task1 {
         String line = sc.nextLine();
         String[] stringArray = line.split(" ");
         int length = stringArray.length;
-        int [] array = new int[length];
         int i;
 
-        for(i =0; i < length; i++){
-            array[i] = Integer.parseInt(stringArray[i]);
-        }
-
         for(i=length-1; i >=0; i--){
-            System.out.print(array[i] + " ");
+            System.out.print(stringArray[i] + " ");
         }
     }
 }
